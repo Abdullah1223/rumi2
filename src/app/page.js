@@ -366,7 +366,7 @@ P.S. - Thank you for choosing to love me back. It's the greatest gift I've ever 
     }, 4500);
 
     return () => clearInterval(interval);
-  }, [showContent, currentPage]);
+  }, [showContent, currentPage,quotes.length]);
 
   if (!hasExploded) {
     return (
