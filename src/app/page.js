@@ -546,12 +546,18 @@ P.S. - Thank you for choosing to love me back. It's the greatest gift I've ever 
                         <Heart className="text-pink-300 fill-current w-6 h-6 sm:w-8 sm:h-8 animate-bounce" style={{ animationDelay: '0.4s' }} />
                       </div>
 
-                      <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-6 sm:mb-8 leading-relaxed italic font-serif drop-shadow-lg ${
-                        quotes[currentQuote].isPersonal ? 'text-yellow-200' : 
-                        quotes[currentQuote].isThankYou ? 'text-rose-200' : 'text-white'
-                      }`}>
-                        "{quotes[currentQuote].text}"
-                      </p>
+                      // <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-6 sm:mb-8 leading-relaxed italic font-serif drop-shadow-lg ${
+                      //   quotes[currentQuote].isPersonal ? 'text-yellow-200' : 
+                      //   quotes[currentQuote].isThankYou ? 'text-rose-200' : 'text-white'
+                      // }`}>
+                      //   "{quotes[currentQuote].text}"
+                      // </p>
+                        <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-6 sm:mb-8 leading-relaxed italic font-serif drop-shadow-lg ${
+  quotes[currentQuote].isPersonal ? 'text-yellow-200' : 
+  quotes[currentQuote].isThankYou ? 'text-rose-200' : 'text-white'
+}`}>
+  &ldquo;{quotes[currentQuote].text}&rdquo;
+</p>
                       
                       <div className="flex items-center justify-center space-x-2 sm:space-x-4 mb-4 sm:mb-6">
                         <div className={`w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 rounded-full ${
